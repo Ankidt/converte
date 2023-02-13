@@ -26,8 +26,3 @@ let res = d.toString(toBase) //converting base10 to required base
 return res
 
 }
-document.getElementById("swap").addEventListener('click', () => {
-    let temp = from.value
-    from.value = to.value
-    to.value = temp
-})
