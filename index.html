@@ -6,40 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter</title>
     <link href="./style.css" rel="stylesheet">
+
+
 </head>
 <body>
-    <div class="wrapper">
-    <div class="inputs">
-        <!--from dropdown-->
-        <div class="w-100">
-            <select id="from" class="input-field">
-                <option value="2">Binary</option>
-                <option value="8">Octal</option>
-                <option value="10">Decimal</option>
-                <option value="16">HexaDecimal</option>
-            </select>
+    <h2>Converter </h2>
+    <!-- from Drop down -->
+    <div class="wrapper" >
+        <div class="input" >
+            <div class="w-100">
+                <select  id="from" class="input-field">
+                    <option value="2">Binary</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">HexaDecimal</option>
+                </select>
+                
+            </div>
+             <!-- to Drop down -->
+            <div class="w-100">
+                <select id="to" class="input-field">
+                    <option value="2">Binary</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">HexaDecimal</option>
+                </select>
+            </div>
         </div>
-    <!--to dropdown-->
-    <div class="w-100">
-        <select id="to" class="input-field">
-            <option value="2">Binary</option>
-            <option value="8">Octal</option>
-            <option value="10">Decimal</option>
-            <option value="16">HexaDecimal</option>
-        </select>
-    </div>
-    </div>
-    <!---Input Field-->
-    <div class="w-100">
-        <input id="input-number" type="text" placeholder="Enter Your number" class="input-field">
-    </div>
-    <div style="margin-top: 40px;">
-        <button id="convert">Convert</button>
-        <button id="swap">Swap</button>
-    </div>
-    <div id="result-box"></div>
-    </div>
+        <!-- input field -->
+        <div class="w-100">
+            <input id="input-number" type="text" placeholder="Enter" class="input-field">
+        </div>
+        <!-- buttons -->
+        <div style="margin-top: 40px;">
+            <button id="convert">Convert</button>
+            <button id="swap">Swap</button>
+            <button id="reset">Reset</button>
+        </div>
+        <!-- result box -->
+        <div id="result-box"></div>
+        
 
-  <script src="./app.js"></script>  
-</body>
+      
+
+    </div>
+    <script src="./app.js" ></script>
+
+   </body>
 </html>

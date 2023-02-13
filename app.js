@@ -1,9 +1,11 @@
-let from = document.getElementById("from")
+const from = document.getElementById("from")
 const to = document.getElementById("to")
 const inputNumber = document.getElementById("input-number")
 const resultBox = document.getElementById("result-box")
 
-document.getElementById("convert").addEventListener("click",()=>{
+
+
+document.getElementById("convert").addEventListener('click',()=>{
 let fromValue = from.value
 
 let toValue = to.value
@@ -24,3 +26,8 @@ let res = d.toString(toBase) //converting base10 to required base
 return res
 
 }
+document.getElementById("swap").addEventListener('click', () => {
+    let temp = from.value
+    from.value = to.value
+    to.value = temp
+})
